@@ -1,6 +1,7 @@
 /* This is the main body of the test program.
  * DO NOT write any of your core functionality here.
- * This file will be replace during grading. */
+ * You are free to modify this file but be aware that
+ * this file will be replace during grading. */
 
 #include <stdio.h>
 #include "uthread.h"
