@@ -4,17 +4,24 @@
  * this file will be replace during grading. */
 
 #include <stdio.h>
+#include <unistd.h>
 #include "uthread.h"
 
 void thread1(void* arg)
 {
-    printf("This is thread 1\n");
+    for (int i = 0; i < 10; i++) {
+        printf("This is thread 1\n");
+        usleep(1000);
+    }
     uthread_exit();
 }
 
 void thread2(void* arg)
 {
-    printf("This is thread 2\n");
+    for (int i = 0; i < 10; i++) {
+        printf("This is thread 2\n");
+        usleep(1000);
+    }
     uthread_exit();
 }
 
