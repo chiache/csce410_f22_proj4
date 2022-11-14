@@ -22,3 +22,11 @@ void uthread_yield(void)
 void uthread_cleanup(void)
 {
 }
+
+void uthread_set_policy(enum uthread_policy policy)
+{
+}
+
+void uthread_set_param(int param)
+{
+}

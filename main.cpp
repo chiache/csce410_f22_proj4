@@ -30,6 +30,6 @@ int main(int argc, const char** argv)
     uthread_init();
     uthread_create(thread1, NULL);
     uthread_create(thread2, NULL);
-    uthread_exit();
+    uthread_cleanup();
     return 0;
 }
