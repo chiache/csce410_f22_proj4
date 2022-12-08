@@ -8,7 +8,7 @@ all:    uthread
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 uthread:	uthread.o main.o
-	$(CXX) $(LDFLAGS) -o $@ $<
+	$(CXX) $(LDFLAGS) -o $@ $^
 
 clean:
 	$(RM) -f uthread uthread.o main.o
